@@ -27,7 +27,7 @@ body {
 
 h1,
 h3 {
-  color: white;
+  color: cadetblue;
   margin: auto;
   text-align: center;
   width: 40%;
@@ -63,12 +63,3 @@ li {
   margin-left: -1px;
   margin-bottom: -1px;
 }
-
-/* .dropbtn {
-  background-color: white;
-}
-
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: white;
-} */

@@ -29,7 +29,7 @@ class Life extends React.Component {
     let gridCopy = arrayClone(this.state.gridFull);
     for (let i = 0; i < this.rows; i++) {
       for (let j = 0; j < this.cols; j++) {
-        if (Math.floor(Math.random() * 4) === 1) {
+        if (Math.floor(Math.random() * 3) === 2) {
           gridCopy[i][j] = true;
         }
       }
@@ -79,7 +79,6 @@ class Life extends React.Component {
         this.rows = 50;
         break;
     }
-    // this.clear();
   };
 
   gridSize2 = (size) => {
@@ -93,7 +92,6 @@ class Life extends React.Component {
         this.rows = 30;
         break;
     }
-    // this.clear();
   };
 
   // preSet = () => {
@@ -161,7 +159,7 @@ class Life extends React.Component {
           selectBox={this.selectBox}
         />
         <h1>Generations: {this.state.generation}</h1>
-        <h3>The Rules</h3>
+        <h3>The Rules:</h3>
         <h5>
           Any live cell with fewer than two live neighbours dies, as if by
           underpopulation.
